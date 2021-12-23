@@ -17,7 +17,7 @@ namespace UI {
 
         private void ResetTimer()
         {
-            timerscript.timervalue = 30f;
+            timerscript.timervalue = 60f;
         }
 
         private void GenerateNewImage()

@@ -37,7 +37,8 @@ namespace MISC {
                     y = 0.15f;
                     x = 0.9f;
                 }
-                characters[i].transform.position = pos;
+                float halfwidth = characters[i].GetComponent<SpriteRenderer>().bounds.size.x / 2;
+                characters[i].transform.position = pos - new Vector3(halfwidth,0,0);
             }
         }
     }

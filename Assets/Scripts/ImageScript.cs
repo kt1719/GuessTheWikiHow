@@ -20,5 +20,6 @@ public class ImageScript : MonoBehaviour
         image.AddComponent<SpriteRenderer>();
         image.GetComponent<SpriteRenderer>().sprite = wikiSprites.wikiSprites[num];
         image.transform.position = Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 1));
+        image.transform.position = new Vector3(image.transform.position.x, image.transform.position.y, 0);
     }
 }
